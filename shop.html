@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
-  <body>
+  <body class="inner-page">
     <header class="main-header">
       <div class="container clearfix">
         <nav class="main-navigation">
@@ -24,7 +24,7 @@
             <li>
               <a href="price.html">Прайс-лист</a>
             </li>
-            <li>
+            <li class="active">
               <a href="shop.html">Магазин</a>
             </li>
             <li>
@@ -37,17 +37,22 @@
         </div> 
       </div>
     </header>
-  <main>
-    <div class="container">
-    <h2>Средства для ухода</h2>
-    <!--Breadcrumbs-->
+  <main class="container clearfix">
+    <div class="inner-page-title">
+      <h1>Набор для путешествий "Baxter of California"</h1>
+    </div>
       <ul class="breadcrumbs">
-        <li><a href="#">Главная</a></li>
-        <li><a href="#">Магазин</a></li>
-        <li>Средства для ухода<</li>
+        <li>
+          <a href="index.html">Главная</a>
+        </li>
+        <li>
+          <a href="shop.html">Магазин</a>
+        </li>
+        <li class="current">
+          Средства для ухода
+        </li>
       </ul>
-<!--Aside filters-->
-  <aside class="aside-filters ">
+    <aside class="aside-filters">
     <form action="#" method="post">
       <fieldset>
         <legend>Производители</legend>
@@ -88,7 +93,7 @@
               <label for="American Crew">American Crew</label>
               </div>
   	        </li>
-  	    </ul>
+  	      </ul>
       </fieldset>
       <fieldset>
         <legend>Группы товоров</legend>
@@ -120,85 +125,86 @@
   <div class="catalog-field">
 <!--1-->
     <div class="catalog-item">
-      <a href="#"><img src="img/catalog-item-1.png" class="item-pic" alt="Набор для путешествий Baxter-of-California" width="220" height="165"></a>
+      <a href="#">
+      <img src="img/catalog-item-1.png" class="item-pic" alt="Набор для путешествий Baxter-of-California" width="220" height="165">
+      </a>
       <h2>
-        <a><span class="item-category">Набор для путешествий</span>
-        <span class="item-titlte">"Baxter of California"</span></a>
+        <a class="catalog-item__name"><span class="item-category">Набор для путешествий</span>
+        <span class="item-title">"Baxter of California"</span></a>
       </h2>
       <div class="item-price">
         <span class="price-field">2900 руб.</span>
-        <button class="btn" type="button">Купить</button>
+        <a href="#" class="btn-shop">Купить</a>
       </div>
     </div>
 <!--2-->
     <div class="catalog-item">
       <a href="#"><img src="img/catalog-item-2.png" class="item-pic" alt="Увлажняющий кондиционер Baxter-of-California" width="220" height="165"></a>
       <h2>
-        <a><span class="item-category">Увлажняющий кондиционер</span>
-        <span class="item-titlte">"Baxter of California"</span></a>
+        <a class="catalog-item__name"><span class="item-category">Увлажняющий кондиционер</span>
+        <span class="item-title">"Baxter of California"</span></a>
       </h2>
       <div class="item-price">
-      <span class="price-field">750 руб.</span>
-      <button class="btn" type="button">Купить</button>
+        <span class="price-field">750 руб.</span>
+        <a href="#" class="btn-shop">Купить</a>
       </div>
     </div>
 <!--3-->
     <div class="catalog-item">
       <a href="#"><img src="img/catalog-item-3.png" class="item-pic" alt="Гель для волос Suavecito" width="220" height="165"></a>
       <h2>
-        <a><span class="item-category">Гель для волос</span>
-        <span class="item-titlte">"Suavecito"</span></a>
+        <a class="catalog-item__name"><span class="item-category">Гель для волос</span>
+        <span class="item-title">"Suavecito"</span></a>
       </h2>
       <div class="item-price">
-      <span class="price-field">290 руб.</span>
-      <button class="btn" type="button">Купить</button>
+        <span class="price-field">290 руб.</span>
+        <a href="#" class="btn-shop">Купить</a>
       </div>
     </div>
 <!--4-->
     <div class="catalog-item">
       <a href="#"><img src="img/catalog-item-4.png" class="item-pic" alt="Глина для укладки волос American Crew" width="220" height="165"></a>
       <h2>
-        <a><span class="item-category">Глина для укладки волос</span>
-        <span class="item-titlte">"American Crew"</span></a>
+        <a class="catalog-item__name"><span class="item-category">Глина для укладки волос</span>
+        <span class="item-title">"American Crew"</span></a>
       </h2>
       <div class="item-price">
-      <span class="price-field">500 руб.</span>
-      <button class="btn" type="button">Купить</button>
+        <span class="price-field">500 руб.</span>
+        <a href="#" class="btn-shop">Купить</a>
       </div>
     </div>
 <!--5-->
     <div class="catalog-item">
       <a href="#"><img src="img/catalog-item-5.png" class="item-pic" alt="Гель для волос American Crew" width="220" height="165"></a>
       <h2>
-        <a><span class="item-category">Гель для волос</span>
-        <span class="item-titlte">"American Crew"</span></a>
+        <a class="catalog-item__name"><span class="item-category">Гель для волос</span>
+        <span class="item-title">"American Crew"</span></a>
       </h2>
       <div class="item-price">
-      <span class="price-field">300 руб.</span>
-      <button class="btn" type="button">Купить</button>
+        <span class="price-field">300 руб.</span>
+        <a href="#" class="btn-shop">Купить</a>
       </div>
     </div>
 <!--6-->
     <div class="catalog-item">
       <a href="#"><img src="img/catalog-item-6.png" class="item-pic" alt="Набор для бритья Baxter-of-California" width="220" height="165"></a>
       <h2>
-        <a><span class="item-category">Набор для бритья</span>
-        <span class="item-titlte">"Baxter of California"</span></a>
+        <a class="catalog-item__name"><span class="item-category">Набор для бритья</span>
+        <span class="item-title">"Baxter of California"</span></a>
       </h2>
       <div class="item-price">
-      <span class="price-field">3900 руб.</span>
-      <button class="btn" type="button">Купить</button>
+        <span class="price-field">3900 руб.</span>
+        <a href="#" class="btn-shop">Купить</a>
       </div>
     </div>
-<!--Paginator-->
+  </div>
+<!--Paginator
   <div class="paginator">
     <a href="#1">1</a>
     <a href="#2">2</a>
     <a href="#3">3</a>
     <a href="#4">4</a>
-  </div>
-  </div>
-  </div>
+  </div>-->
   </main>
   <footer class="main-footer">
       <div class="container clearfix">

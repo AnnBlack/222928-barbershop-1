@@ -307,7 +307,27 @@ body {
   border: none;
   cursor: pointer;
 }
-
+.btn-shop {
+  display: inline-block;
+    margin-right: -8px;
+    padding-top: 11px;
+    padding-bottom: 10px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    font-family: "PT Sans Narrow", "Arial", sans-serif;
+    vertical-align: top;
+    text-align: center;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: #000000;
+    border: none;
+    cursor: pointer;
+    padding-left: 15px;
+    padding-right: 17px;
+    margin-left: -2px;
+}
 .btn:hover,
 .btn:active {
   background-color: #663d15;
@@ -323,7 +343,10 @@ body {
 .btn:disabled:hover {
   background-color: #000000;
 }
-
+.btn-shop:hover,
+.btn-shop:active {
+  background-color: #663d15;
+}
 .gallery {
   position: relative;
 
@@ -614,7 +637,46 @@ body {
 .inner-column-right *:last-child {
   margin-bottom: 0;
 }
+.aside-filters {
+  float: left;
+  width: 220px;
+  height: 600px;
 
+
+}
+.catalog-field {
+  margin-top: 35px;
+}
+.catalog-item {
+  float: left;
+  width: 220px;
+  min-height: 300px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+
+  background-color: #fff;
+  
+        -webkit-box-shadow: -1px 3px 5px 4px rgba(0,0,0,0.08);
+      -moz-box-shadow: -1px 3px 5px 4px rgba(0,0,0,0.08);
+      box-shadow: -1px 3px 5px 4px rgba(0,0,0,0.08);
+}
+.catalog-item__name {
+  display: block;
+  margin-left: 20px;
+}
+.item-category {
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: none;
+}
+.item-title {
+  display: block;
+  text-transform: uppercase;
+}
+.item-price {
+  margin-left: 10px;
+  margin-bottom: 13px;
+}
 .footer-contacts {
   float: left;
   width: 320px;
